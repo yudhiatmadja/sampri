@@ -6,7 +6,7 @@ import whisper
 import io
 
 # Load Whisper once (startup)
-model = whisper.load_model("medium")
+model = whisper.load_model("medium", device="cuda")
 
 def receive_all(sock, size):
     """Terima semua data dengan ukuran yang diharapkan."""

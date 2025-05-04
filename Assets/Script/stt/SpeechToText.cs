@@ -51,7 +51,7 @@ public class SpeechToText : MonoBehaviour
 
     void StartRecording()
     {
-        audioClip = Microphone.Start(micDevice, false, 10, sampleRate);
+        audioClip = Microphone.Start(micDevice, false, 5, sampleRate);
         Debug.Log("Recording started...");
     }
 
